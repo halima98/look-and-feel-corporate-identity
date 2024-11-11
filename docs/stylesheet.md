@@ -2,62 +2,75 @@
 
 ## Stylesheet
 
-Je hebt in Figma een styleguide gemaakt, nu ga je een gestructureerd CSS file maken met als doel dat jullie één stylesheet kunnen gebruiken in je individuele project.
-
-
-<!-- 
-Deze teksten komen o.a. uit de deeltaak [Custom properties](https://github.com/fdnd-task/look-and-feel-custom-properties) 
-Dit jaar gaan we ons meer richten op het maken van 1 stylesheet dat de studenten kunnen gebruiken voor hun eigen project. 
-
-Workshop stylesheets for styleguides: over structuur aanbrengen in HTML en CSS, classes en custom properties
-
-In Figma staan 8 artboards met een uitwerken van onderdelen op basis van de huisstijl van de opdracht
-Studenten gaan zelf een stylesheet maken. Deze komt op 1 plek te staan. 
-Bijhorende HTML klaarzetten. In de leertaak? Styleguide.html. Of in een aparte repo waar ze allemaal in gaan werken?
-
--->
-
+Je hebt in Figma een styleguide gemaakt, nu ga je een gestructureerd CSS file maken met als doel dat jullie één stylesheet kunnen gebruiken in je individuele project voor veelvoorkomende CSS selectoren en properties.
 
 ## Aanpak
 
-Op het whiteboard gezamenlijk een breakdown maken voor de verschillende componenten. form, typo, kleur, afbeeldingen, ....
+Op het whiteboard gezamenlijk een breakdown maken voor de veel voorkomende huisstijl componenten op basis van het Figma ontwerp; kleuren, typografie, links, buttons, headings en formulier elementen.
 
-Hoe gaan de componenten heten? 
+Bedenk met elkaar consistente en betekenisvolle namen voor de verschillende huisstijl componenten en gebruik deze namen voor de classes in de gedeelde stylesheet
 
-Verdeel de onderdelen van de styleguide en werk ze allemaal uit in een gezamenlijke repo
+Verdeel de huisstijl componenten van de styleguide onder de teamleden en werk ze allemaal uit in de stylesheet van de [gezamenlijke styleguide repo](https://github.com/fdnd-task/look-and-feel-styleguide).
 
+Tenslotte ga je je reeds gemaakt CSS code refactoren. Alle CSS die reeds in de generieke stylesheet staat kan weggehaald worden, en je neemt de naming conventies van het team over. 
 
 ### Ontwerpen/bouwen
 
-Hoe kan je de CSS structureren met classes? Custom properties? 
-Bekijk welke elementen uit de living styleguide in CSS geschreven kunnen worden met custom properties. Denk bijvoorbeeld aan kleuren, font-sizes, borders, breedtes en/of hoogtes van elementen.  Als waardes vaker voorkomen, kun je custom properties gebruiken. 
+**Opdracht: CSS strategie analyse** 
+Bekijk, voor onderstaande websites, in de inspector welke css strategie is gebruikt voor de veel voorkomende huisstijl componenten; kleuren, typografie, links, buttons, headings, formulier elementen.
 
-Structureer de CSS met custom properties en classes, pas een goede structuur toe en gebruik conventies zoals DRY, leesbaarheid van de code en naamgeving.
+https://css-tricks.com/
+https://www.smashingmagazine.com/
+https://fdnd.nl/
 
-Teken een breakdown-schets om duidelijk te krijgen wat je gaat coderen. Teken de elementen die je gaat maken, maak aantekeningen voor de HTML, de CSS en welke Custom properties je gaat toepassen. Gebruik de Living Styleguide met code voorbeelden...
+#### Custom Properties
+Met Custom Properties kun je een css value opslaan en op meerdere plekken gebruiken. Hiermee zorg je voor _DRY code_, wat de code beter leesbaar, makkelijker onderhoudbaar en sneller maakt. Dit is fijn voor de developers én de gebruikers.
 
-#### Voor gevorderden
+**Opdracht**
+A. Vervang vaker voorkomende values:
+Gebruik voor values die in de generieke stylesheet vaker voorkomen _Custom Properties_. Maak in het team afspraken over betekenisvolle namen voor de Custom Properties.
 
-Als je al vaker met custom properties hebt gewerkt, lees dan het artikel [A complet guide to Custom Properties](https://css-tricks.com/a-complete-guide-to-custom-properties/) en probeer verschillende technieken en ideeën toe te passen, zoals: 
-- Dark mode
-- Custom properties en Media queries
-- Custom properties en JavaScript
-- ...
+Tip: Zet een Custom Property nooit op de _:root_ selector, maar zo diep mogelijk in de _DOM Tree_!
+
+Bronnen:
+- [Custom Properties (MDN)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+- [A strategy Guide To CSS Custom Properties](https://www.smashingmagazine.com/2018/05/css-custom-properties-strategy-guide/)
+- [Breaking CSS Custom Properties out of :root Might Be a Good Idea](https://css-tricks.com/breaking-css-custom-properties-out-of-root-might-be-a-good-idea/)
+- Advanced: [Pseudo-Private Custom Properties](https://lea.verou.me/blog/2021/10/custom-properties-with-defaults/ )
+
+B. Dark Theme
+Een Light en Dark mode op de webiste helpt gebruikers om de website beter te kunnen bekijken in verschillende omstandigheden. 
+Implementeer een Dark Theme, die in ieder geval werkt op basis van de voorkeuren van de gebruiker. Custom Properties kunnen hierbij helpen om onnodige herhaling van bijvoorbeeld CSS values voor kleuren te voorkomen. 
+
+Bronnen:
+- [prefers-color-scheme (MDN)](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
+- Advanced: [Dark Mode in 3 Lines of CSS and Other Adventures](https://dev.to/madsstoumann/dark-mode-in-3-lines-of-css-and-other-adventures-1ljj)
 
 
-## Bronnen
+#### CSS Nesting
+Met CSS Nesting plaats je child elements ín het parent element. Hiermee zorg je voor _DRY code_, wat de code beter leesbaar, makkelijker onderhoudbaar en sneller maakt. Dit is fijn voor de developers én de gebruikers. 
 
-- [A complete guide to Custom Properties](https://css-tricks.com/a-complete-guide-to-custom-properties/)
-- [CSS naming conventions that will save you hours of debugging](https://www.freecodecamp.org/news/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849/)
-<!-- - [Using CSS custom properties like this is a waste](https://www.youtube.com/watch?v=_2LwjfYc1x8)-->
-<!-- - [Basis voorbeeld template HTML & CSS structuur](https://codepen.io/joostf/pen/xEpmLx) -->
+**Opdracht**
+Maak met je team, aan de hand van de onderstaande bron, afspraken over hoe jullie CSS nesting implementeren in de stylesheet.
 
+Bron: [Native CSS nesting: What you need to know](https://blog.logrocket.com/native-css-nesting/)
 
-<!-- 
-## Definition of done
+#### CSS Cascade Layers
+Met CSS Cascade Layers kan je extra specificity levels aanmaken in CSS. Dat kan helpen om de stylesheets overzichtelijker te houden en voorkomt het gebruik van _!important_.
 
-Deze opdracht is done als:
+**Opdracht: **
+Maak met je team, aan de hand van onderstaande bron, afspraken over welke layers jullie willen definiëren in de generieke stylesheet.
 
-- [ ] je hebt custom properties gebruikt en in de wiki uitgelegd hoe jouw code werkt
-- [ ] je hebt een duidelijke structuur toegepast in jouw CSS bestand(en) en dit gedocumenteerd in de wiki 
--->
+Bron:
+- [Cascade layers](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_layers)
+- [Cascade Layers Guide](https://css-tricks.com/css-cascade-layers/)
+- Advanced: [Cascade Layers are useless*](https://www.matuzo.at/blog/2023/cascade-layers-are-useless/)
+
+### integreren
+
+#### Generieke Stylesheet implementeren
+Nu je met je team een gemeenschappelijke, generieke stylesheet hebt gemaakt, kan je deze gebruiken in jouw eigen project (leertaak).
+
+**Opdracht**
+Koppel de gemeenschappelijke, generieke stylesheet in de HTML van jouw project (gebruik hiervoor de live link naar de stylesheet op GitHub pages) en refactor jouw reeds bestaande lokale stylesheets. Hieruit kan alle overbodige CSS, die nu in d egenrieke stylesheet staat, worden verwijderd.
+Verwerk vervolgens de code conventions (over naamgeving, custom propertie, nesting en layers).
