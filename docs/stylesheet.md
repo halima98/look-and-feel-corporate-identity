@@ -5,12 +5,9 @@
 Je hebt in Figma een styleguide gemaakt, nu ga je een gestructureerd CSS file maken met als doel dat jullie één stylesheet kunnen gebruiken in je individuele project voor veelvoorkomende CSS selectoren en properties.
 
 ## Aanpak
-
-
-
 Op het whiteboard gezamenlijk een breakdown maken voor veel voorkomende huisstijl componenten van bestaande websites; kleuren, typografie, links, buttons, headings en formulier elementen.
 
-Bedenk met elkaar consistente en betekenisvolle namen voor de verschillende huisstijl componenten en gebruik deze namen voor de classes in de gedeelde stylesheet.
+Bedenk in teams consistente en betekenisvolle namen voor de verschillende huisstijl componenten en gebruik deze namen voor de classes in de gedeelde stylesheet.
 
 Verdeel de huisstijl componenten van de styleguide onder de teamleden en werk ze allemaal uit in de stylesheet van de [gezamenlijke styleguide repo](https://github.com/fdnd-task/look-and-feel-styleguide).
 
@@ -22,6 +19,7 @@ Refactor jouw eigen specifieke stylesheet(s). Alle CSS die reeds in de generieke
 
 **Opdracht: CSS strategie analyse** 
 Bekijk, voor onderstaande websites, in de inspector welke css strategie is gebruikt voor de veel voorkomende huisstijl componenten; kleuren, typografie, links, buttons, headings, formulier elementen.
+Wat valt op aan de naamgeving van classes en custom properties?
 
 https://css-tricks.com/
 https://www.smashingmagazine.com/
