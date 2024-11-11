@@ -5,7 +5,7 @@
 Je hebt in Figma een styleguide gemaakt, nu ga je een gestructureerd CSS file maken met als doel dat jullie één stylesheet kunnen gebruiken in je individuele project voor veelvoorkomende CSS selectoren en properties.
 
 ## Aanpak
-Op het whiteboard gezamenlijk een breakdown maken voor veel voorkomende huisstijl componenten van bestaande websites; kleuren, typografie, links, buttons, headings en formulier elementen.
+Op het whiteboard gezamenlijk een breakdown maken van de CSS voor veel voorkomende huisstijl componenten van bestaande websites; kleuren, typografie, links, buttons, headings en formulier elementen.
 
 Bedenk in teams consistente en betekenisvolle namen voor de verschillende huisstijl componenten en gebruik deze namen voor de classes in de gedeelde stylesheet.
 
