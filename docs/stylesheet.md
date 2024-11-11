@@ -15,15 +15,20 @@ Maak afspraken (code conventions) over het beter structureren van de CSS van de 
 
 Refactor jouw eigen specifieke stylesheet(s). Alle CSS die reeds in de generieke stylesheet staat kan weggehaald worden, en je neemt de code conventies van het team over. 
 
-### Ontwerpen/bouwen
+### Analyse
 
-**Opdracht: CSS strategie analyse**  
+#### CSS strategie
+Naarmate er meer CSS in je project komt, bijvoorbeeld als je gaat samenwerken aan een project, wordt het steeds belangrijker om een CSS strategie (met elkaar) te bepalen.
+
+**Opdracht**  
 Bekijk, voor onderstaande websites, in de inspector welke css strategie is gebruikt voor de veel voorkomende huisstijl componenten; kleuren, typografie, links, buttons, headings, formulier elementen.
 Wat valt op aan de naamgeving van classes en custom properties?  
 
 - https://css-tricks.com/  
 - https://www.smashingmagazine.com/  
 - https://fdnd.nl/  
+
+### Ontwerpen/bouwen
 
 #### Custom Properties
 Met Custom Properties kun je een css value opslaan en op meerdere plekken gebruiken. Hiermee zorg je voor _DRY code_, wat de code beter leesbaar, makkelijker onderhoudbaar en sneller maakt. Dit is fijn voor de developers én de gebruikers.
