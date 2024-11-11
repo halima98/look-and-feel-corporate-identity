@@ -78,5 +78,5 @@ Bronnen:
 Nu je met je team een gemeenschappelijke, generieke stylesheet hebt gemaakt, kan je deze gebruiken in jouw eigen project (leertaak).
 
 **Opdracht**  
-Koppel de gemeenschappelijke, generieke stylesheet in de HTML van jouw project (gebruik hiervoor de live link naar de stylesheet op GitHub pages) en refactor jouw reeds bestaande lokale stylesheets. Hieruit kan alle overbodige CSS, die nu in d egenrieke stylesheet staat, worden verwijderd.
+Koppel de gemeenschappelijke, generieke stylesheet in de HTML van jouw project (gebruik hiervoor de live link naar de stylesheet op GitHub pages) en refactor jouw reeds bestaande lokale stylesheets. Hieruit kan alle overbodige CSS, die nu in de generieke stylesheet staat, worden verwijderd.
 Verwerk vervolgens de code conventions (over naamgeving, custom properties, nesting en layers).
