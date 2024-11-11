@@ -6,13 +6,17 @@ Je hebt in Figma een styleguide gemaakt, nu ga je een gestructureerd CSS file ma
 
 ## Aanpak
 
-Op het whiteboard gezamenlijk een breakdown maken voor de veel voorkomende huisstijl componenten op basis van het Figma ontwerp; kleuren, typografie, links, buttons, headings en formulier elementen.
 
-Bedenk met elkaar consistente en betekenisvolle namen voor de verschillende huisstijl componenten en gebruik deze namen voor de classes in de gedeelde stylesheet
+
+Op het whiteboard gezamenlijk een breakdown maken voor veel voorkomende huisstijl componenten van bestaande websites; kleuren, typografie, links, buttons, headings en formulier elementen.
+
+Bedenk met elkaar consistente en betekenisvolle namen voor de verschillende huisstijl componenten en gebruik deze namen voor de classes in de gedeelde stylesheet.
 
 Verdeel de huisstijl componenten van de styleguide onder de teamleden en werk ze allemaal uit in de stylesheet van de [gezamenlijke styleguide repo](https://github.com/fdnd-task/look-and-feel-styleguide).
 
-Tenslotte ga je je reeds gemaakt CSS code refactoren. Alle CSS die reeds in de generieke stylesheet staat kan weggehaald worden, en je neemt de naming conventies van het team over. 
+Maak afspraken (code conventions) over het beter structureren van de CSS van de gemeenschappelijke, generieke stylesheet.
+
+Refactor jouw eigen specifieke stylesheet(s). Alle CSS die reeds in de generieke stylesheet staat kan weggehaald worden, en je neemt de code conventies van het team over. 
 
 ### Ontwerpen/bouwen
 
@@ -73,4 +77,4 @@ Nu je met je team een gemeenschappelijke, generieke stylesheet hebt gemaakt, kan
 
 **Opdracht**
 Koppel de gemeenschappelijke, generieke stylesheet in de HTML van jouw project (gebruik hiervoor de live link naar de stylesheet op GitHub pages) en refactor jouw reeds bestaande lokale stylesheets. Hieruit kan alle overbodige CSS, die nu in d egenrieke stylesheet staat, worden verwijderd.
-Verwerk vervolgens de code conventions (over naamgeving, custom propertie, nesting en layers).
+Verwerk vervolgens de code conventions (over naamgeving, custom properties, nesting en layers).
