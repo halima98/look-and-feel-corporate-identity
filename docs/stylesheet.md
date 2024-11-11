@@ -34,7 +34,6 @@ Wat valt op aan de naamgeving van classes en custom properties?
 Met Custom Properties kun je een css value opslaan en op meerdere plekken gebruiken. Hiermee zorg je voor _DRY code_, wat de code beter leesbaar, makkelijker onderhoudbaar en sneller maakt. Dit is fijn voor de developers én de gebruikers.
 
 **Opdracht**  
-A. Vervang vaker voorkomende values:  
 Gebruik voor values die in de generieke stylesheet vaker voorkomen _Custom Properties_. Maak in het team afspraken over betekenisvolle namen voor de Custom Properties.
 
 Tip: Zet een Custom Property nooit op de _:root_ selector, maar zo diep mogelijk in de _DOM Tree_!
@@ -45,14 +44,13 @@ Bronnen:
 - [Breaking CSS Custom Properties out of :root Might Be a Good Idea](https://css-tricks.com/breaking-css-custom-properties-out-of-root-might-be-a-good-idea/)
 - Advanced: [Pseudo-Private Custom Properties](https://lea.verou.me/blog/2021/10/custom-properties-with-defaults/ )
 
-B. Dark Theme  
-Een Light en Dark mode op de webiste helpt gebruikers om de website beter te kunnen bekijken in verschillende omstandigheden. 
+**Opdracht**  
+Een Light en Dark mode op de website helpt gebruikers om de website beter te kunnen bekijken in verschillende omstandigheden. 
 Implementeer een Dark Theme, die in ieder geval werkt op basis van de voorkeuren van de gebruiker. Custom Properties kunnen hierbij helpen om onnodige herhaling van bijvoorbeeld CSS values voor kleuren te voorkomen. 
 
 Bronnen:  
 - [prefers-color-scheme (MDN)](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
 - Advanced: [Dark Mode in 3 Lines of CSS and Other Adventures](https://dev.to/madsstoumann/dark-mode-in-3-lines-of-css-and-other-adventures-1ljj)
-
 
 #### CSS Nesting
 Met CSS Nesting plaats je child elements ín het parent element. Hiermee zorg je voor _DRY code_, wat de code beter leesbaar, makkelijker onderhoudbaar en sneller maakt. Dit is fijn voor de developers én de gebruikers. 
