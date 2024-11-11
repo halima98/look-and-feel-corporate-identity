@@ -73,7 +73,7 @@ Bronnen:
 - [Cascade Layers Guide](https://css-tricks.com/css-cascade-layers/)
 - Advanced: [Cascade Layers are useless*](https://www.matuzo.at/blog/2023/cascade-layers-are-useless/)
 
-### integreren
+### Integreren
 
 #### Generieke Stylesheet implementeren
 Nu je met je team een gemeenschappelijke, generieke stylesheet hebt gemaakt, kan je deze gebruiken in jouw eigen project (leertaak).
