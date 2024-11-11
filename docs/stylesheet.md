@@ -58,7 +58,8 @@ Met CSS Nesting plaats je child elements ín het parent element. Hiermee zorg je
 **Opdracht**  
 Maak met je team, aan de hand van de onderstaande bron, afspraken over hoe jullie CSS nesting implementeren in de stylesheet.
 
-Bron: [Native CSS nesting: What you need to know](https://blog.logrocket.com/native-css-nesting/)
+Bron:    
+- [Native CSS nesting: What you need to know](https://blog.logrocket.com/native-css-nesting/)
 
 #### CSS Cascade Layers
 Met CSS Cascade Layers kan je extra specificity levels aanmaken in CSS. Dat kan helpen om de stylesheets overzichtelijker te houden en voorkomt het gebruik van _!important_.
