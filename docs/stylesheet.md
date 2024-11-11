@@ -17,19 +17,19 @@ Refactor jouw eigen specifieke stylesheet(s). Alle CSS die reeds in de generieke
 
 ### Ontwerpen/bouwen
 
-**Opdracht: CSS strategie analyse** 
+**Opdracht: CSS strategie analyse**  
 Bekijk, voor onderstaande websites, in de inspector welke css strategie is gebruikt voor de veel voorkomende huisstijl componenten; kleuren, typografie, links, buttons, headings, formulier elementen.
-Wat valt op aan de naamgeving van classes en custom properties?
+Wat valt op aan de naamgeving van classes en custom properties?  
 
-https://css-tricks.com/
-https://www.smashingmagazine.com/
-https://fdnd.nl/
+- https://css-tricks.com/  
+- https://www.smashingmagazine.com/  
+- https://fdnd.nl/  
 
 #### Custom Properties
 Met Custom Properties kun je een css value opslaan en op meerdere plekken gebruiken. Hiermee zorg je voor _DRY code_, wat de code beter leesbaar, makkelijker onderhoudbaar en sneller maakt. Dit is fijn voor de developers én de gebruikers.
 
-**Opdracht**
-A. Vervang vaker voorkomende values:
+**Opdracht**  
+A. Vervang vaker voorkomende values:  
 Gebruik voor values die in de generieke stylesheet vaker voorkomen _Custom Properties_. Maak in het team afspraken over betekenisvolle namen voor de Custom Properties.
 
 Tip: Zet een Custom Property nooit op de _:root_ selector, maar zo diep mogelijk in de _DOM Tree_!
@@ -40,11 +40,11 @@ Bronnen:
 - [Breaking CSS Custom Properties out of :root Might Be a Good Idea](https://css-tricks.com/breaking-css-custom-properties-out-of-root-might-be-a-good-idea/)
 - Advanced: [Pseudo-Private Custom Properties](https://lea.verou.me/blog/2021/10/custom-properties-with-defaults/ )
 
-B. Dark Theme
+B. Dark Theme  
 Een Light en Dark mode op de webiste helpt gebruikers om de website beter te kunnen bekijken in verschillende omstandigheden. 
 Implementeer een Dark Theme, die in ieder geval werkt op basis van de voorkeuren van de gebruiker. Custom Properties kunnen hierbij helpen om onnodige herhaling van bijvoorbeeld CSS values voor kleuren te voorkomen. 
 
-Bronnen:
+Bronnen:  
 - [prefers-color-scheme (MDN)](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
 - Advanced: [Dark Mode in 3 Lines of CSS and Other Adventures](https://dev.to/madsstoumann/dark-mode-in-3-lines-of-css-and-other-adventures-1ljj)
 
@@ -52,7 +52,7 @@ Bronnen:
 #### CSS Nesting
 Met CSS Nesting plaats je child elements ín het parent element. Hiermee zorg je voor _DRY code_, wat de code beter leesbaar, makkelijker onderhoudbaar en sneller maakt. Dit is fijn voor de developers én de gebruikers. 
 
-**Opdracht**
+**Opdracht**  
 Maak met je team, aan de hand van de onderstaande bron, afspraken over hoe jullie CSS nesting implementeren in de stylesheet.
 
 Bron: [Native CSS nesting: What you need to know](https://blog.logrocket.com/native-css-nesting/)
@@ -60,10 +60,10 @@ Bron: [Native CSS nesting: What you need to know](https://blog.logrocket.com/nat
 #### CSS Cascade Layers
 Met CSS Cascade Layers kan je extra specificity levels aanmaken in CSS. Dat kan helpen om de stylesheets overzichtelijker te houden en voorkomt het gebruik van _!important_.
 
-**Opdracht: **
+**Opdracht**  
 Maak met je team, aan de hand van onderstaande bron, afspraken over welke layers jullie willen definiëren in de generieke stylesheet.
 
-Bron:
+Bronnen:   
 - [Cascade layers](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_layers)
 - [Cascade Layers Guide](https://css-tricks.com/css-cascade-layers/)
 - Advanced: [Cascade Layers are useless*](https://www.matuzo.at/blog/2023/cascade-layers-are-useless/)
@@ -73,6 +73,6 @@ Bron:
 #### Generieke Stylesheet implementeren
 Nu je met je team een gemeenschappelijke, generieke stylesheet hebt gemaakt, kan je deze gebruiken in jouw eigen project (leertaak).
 
-**Opdracht**
+**Opdracht**  
 Koppel de gemeenschappelijke, generieke stylesheet in de HTML van jouw project (gebruik hiervoor de live link naar de stylesheet op GitHub pages) en refactor jouw reeds bestaande lokale stylesheets. Hieruit kan alle overbodige CSS, die nu in d egenrieke stylesheet staat, worden verwijderd.
 Verwerk vervolgens de code conventions (over naamgeving, custom properties, nesting en layers).
